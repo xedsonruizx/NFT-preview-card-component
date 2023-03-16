@@ -1,0 +1,135 @@
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--white);
+  flex-direction: column;
+}
+.card {
+  max-width: 300px;
+  padding: 20px;
+  background-color: var(--very-dark-blue-card);
+  border-radius: 20px;
+  box-shadow: 0px 28px 0px 21px #0c1729, 0px 24px 0px 47px #0C192E;
+}
+/* .card-content{
+  background-color: red;
+} */
+.card-img {
+  width: 100%;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container > img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--cyan);
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  opacity: 0.4;
+}
+
+.container:hover .text {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.card-info {
+  background-color: rgba(255, 0, 0, 0);
+}
+.card-title {
+  font-size: 20px;
+}
+.card-description {
+  font-size: 16px;
+  color: var(--soft-blue);
+}
+.data {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+.mount {
+  color: var(--cyan);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mount > img {
+  padding-right: 5px;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--soft-blue);
+}
+.time > img {
+  padding-right: 5px;
+}
+
+.card-footer {
+  border-top: 1px var(--soft-blue) solid;
+  padding-top: 20px;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+}
+.creator-img {
+  border-radius: 50%;
+  height: 33px;
+  background-color: white;
+  border: 1px white solid;
+  margin-right: 15px;
+}
+.creator {
+  color: var(--soft-blue);
+}
+.creator .creator-name {
+  color: var(--white);
+}

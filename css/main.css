@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+}
+
+:root {
+  /* ### Primary */
+
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  
+  /* ### Neutral */
+  /*  (main BG) */
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  /* (card BG) */
+
+  
+  --very-dark-blue-card : hsl(216, 50%, 16%);
+  /* (line) */
+  --very-dark-blue-line : hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-heavy: 600;
+}
+
+body {
+  background-color: var(--very-dark-blue-bg);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+}
+
+/* GROSOR */
+.fw-light {
+  font-weight: var(--weight-light);
+}
+.fw-normal {
+  font-weight: var(--weight-normal);
+}
+
+.fw-heavy {
+  font-weight: var(--weight-heavy);
+}
+
+.main {
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 750px) {
+  
+}
